@@ -1,25 +1,27 @@
-print("Hello! Welcome to the Elite 101 Launch Console.")
+print("Welcome to the Launch Console!")
 
 name = input("What's your name? ")
-print(f"Nice to meet you, {name}!")
+print(f"Hi, {name}!")
 
-print("\nMenu:")
-print("1. About Elite 101")
-print("2. Preview tickets")
-print("3. Definition of Done")
-print("4. Products")
+running = True
 
-choice = input("Choose an option (1-4): ")
+while running:
+    print("\nMenu:")
+    print("1) About me")
+    print("2) My goals")
+    print("3) Fun fact")
+    print("4) Exit")
 
-if choice == "1":
-  print("Elite 101 is a startup-style course where we build and ship software.")
-elif choice == "2":
-  print("Tickets are small tasks with a clear finish line.")
-elif choice == "3":
-  print("Definition of Done means the work meets the requirements and is ready to ship.")
-elif choice == "4":
-  print("Our startup can build products that solve useful problems.")
-else:
-  print("That's not a valid option.")
+    choice = input("Pick 1-4: ")
 
-print(f"\nThanks for using the Launch Console, {name}!")
+    if choice == "1":
+        print(f"My name is {name}. I am learning to build software.")
+    elif choice == "2":
+        print("My goal is to improve my coding skills not just on Python but also with other coding languages.")
+    elif choice == "3":
+        print("Fun fact: I like sports and my favorite color is Royal blue.")
+    elif choice == "4":
+        print("Goodbye!")
+        running = False
+    else:
+        print("Please pick 1, 2, 3, or 4.")
